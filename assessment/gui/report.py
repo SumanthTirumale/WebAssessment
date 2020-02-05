@@ -142,12 +142,7 @@ class Report(QDialog):
         end_date_time = datetime.datetime.now()
 
         if 'secure_header_file_path' in config_dict.keys():
-            active_header_audit = ActiveHeaderAudit(self.config['secure_header_file_path'])
-        else:
-            active_header_audit = False
-
-        # if secure header check is checked add it to the list
-        config_dict['security_risks'].append('secureheadercheck')
+            config_dict['security_risks'].append('secureheadercheck')
 
         reports = Reports(
             database=assessment_db, vulnerability_type=config_dict['security_risks'],
@@ -163,7 +158,3 @@ class Report(QDialog):
             QMessageBox.information(self, "information", f"Reports generated in {return_data}")
         else:
             QMessageBox.information(self, "information", "Reports has been not generated")
-
-
-
-
