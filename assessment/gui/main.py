@@ -438,7 +438,7 @@ class Main(QMainWindow):
                 )
 
         if active_header_audit:
-            self.config['security_risks'].append(active_header_audit)
+            self.config['security_risks'].append('secureheadercheck')
 
         # record end date time
         end_date_time = datetime.datetime.now()
