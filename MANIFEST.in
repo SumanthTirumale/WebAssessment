@@ -1,0 +1,2 @@
+include assessment/payloads/*.txt
+include assessment/static/logo.ico
