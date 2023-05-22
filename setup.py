@@ -24,6 +24,6 @@ setuptools.setup(
           'webassessment = assessment.webassessment:start_app'
       ],
     },
-    install_requires=['colorama==0.4.3', 'PyQt5==5.14.1', 'requests==2.22.0', 'openpyxl==3.0.3', 'termcolor==1.1.0'],
+    install_requires=['colorama==0.4.3', 'PyQt5==5.14.1', 'requests==2.31.0', 'openpyxl==3.0.3', 'termcolor==1.1.0'],
     include_package_data=True,
 )
